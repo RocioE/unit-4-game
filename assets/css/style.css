@@ -1,0 +1,37 @@
+
+
+body{
+    background: rgb(196, 157, 196);
+}
+
+.crystals{
+    border: 5px solid rgb(241, 178, 228);
+    justify-content: space-around;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    background-color: #ff00b3;
+
+}
+
+img {
+    display: inline;
+    width: 300px;
+    height: 300px;
+}
+.crystal{
+    border: 1px solid rgb(170, 247, 16);
+    height: 100px;
+    width: 100px;
+    
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.p {
+    align-content: center;
+}
