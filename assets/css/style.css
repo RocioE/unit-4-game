@@ -5,11 +5,13 @@ body{
 }
 
 .crystals{
-    border: 5px solid rgb(241, 178, 228);
+    border: 5px solid rgb(241, 158, 223);
     justify-content: space-around;
     display: inline-block;
     align-items: center;
     width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: #ff00b3;
 
 }
@@ -19,17 +21,11 @@ img {
     width: 300px;
     height: 300px;
 }
-.crystal{
-    border: 1px solid rgb(170, 247, 16);
-    height: 100px;
-    width: 100px;
     
-    
-}
 
 h1 {
     text-align: center;
-    font-family: cursive;
+    font-family: Franklin Gothic Medium;
 }
 
 .p {

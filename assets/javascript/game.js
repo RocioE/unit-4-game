@@ -6,20 +6,20 @@
 //if it is greater than the random number result, game starts starts over
 //if it is equal, then player wins
 
-var random_result= Math.floor(Math.random()*(120-19+1)+19);
+var random_result= Math.floor(Math.random()*(120-19+1)+19);   //formula for random #, //
 console.log(random_result)
 
 
 var resetAndStart;
 var random; 
-var lostCount= 0;
-var winCount= 0;
+var lostCount= 0;  //this will work as a counter and will show # of wins
+var winCount= 0;   //this will work as a counter and will show # of wins
 var totalScore= 0;
-var lostDOMRef= $("#lose");
+var lostDOMRef= $("#lose"); //this will work as a counter and will show # of wins, #DOM is what actually makes it happen
 var winDOMRef= $("#win");
 
 
-//is DOM is getting ref of DOM element with ID randomNumber
+//DOM is getting ref of DOM element with ID randomNumber
 // then reseting the text of the ID randomNumber to are variable random_results
 $("#randomNumber").text(random_result);
 $("#score").text(totalScore);
@@ -45,7 +45,7 @@ $("#crystalblue").click(function(){
         console.log("youlost")
         lostCount++ //increment to increase # of losses//
         lostDOMRef.text(lostCount)
-        random_result= Math.floor(Math.random()*(120-19+1)+19);
+        random_result= Math.floor(Math.random()*(120-19+1)+19);  //random # must be btwn 19 and 121
         $("#randomNumber").text(random_result);
         
     }
@@ -54,7 +54,7 @@ $("#crystalblue").click(function(){
 
 $("#crystalpurple").click(function(){
  console.log("crystalpurple")
-    totalScore+= 7
+    totalScore+= 7                      //must assign value to each image, must assign winCount, winDomRef, loseCount, winDOMRef, then random_results, #DOM//
     console.log(totalScore)
     $("#score").text(totalScore);
 
@@ -83,7 +83,7 @@ $("#crystalspink").click(function(){
 
     if (random_result === totalScore){
         console.log("youWon")
-        winCount++ 
+        winCount++  //increment to increase # of losses//
         winDOMRef.text(winCount)
         random_result= Math.floor(Math.random()*(120-19+1)+19);  //this recalculates the random number//
         $("#randomNumber").text(random_result);
@@ -93,7 +93,7 @@ $("#crystalspink").click(function(){
     }
     if (totalScore > random_result){
         console.log("youlost")
-        lostCount++ //increment to increase # of losses//
+        lostCount++ //decrement to increase # of losses//
         lostDOMRef.text(lostCount)
     }
 })
@@ -126,9 +126,6 @@ $("#crystalwhite").click(function(){
 
 var resetAndStart = function() {  // this will start the game///
 
-    random_result = Math.floor(Math.random() * 101) + 19;
-
-
     $("#result").html('Random Result: ' + random_result);
  
 //there are 4 crystals, each will be given a value. Each crystal will be given a class id#
@@ -152,7 +149,7 @@ var resetAndStart = function() {  // this will start the game///
 
 }
 
-// resetAndStart();
+// resetAndStart(); using parse simply parses out set of numbers///
 
 $(".crystal").on('click', function () {
    
